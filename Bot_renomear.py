@@ -1,5 +1,6 @@
 import os
 
+# Renaming all the files in the folder.
 folder = (r"../HashTag_Reconhecimento_CAPTCHA/img/origem/")
 i=0
 for file_name in os.listdir(folder):

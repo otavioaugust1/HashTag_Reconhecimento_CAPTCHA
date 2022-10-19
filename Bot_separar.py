@@ -5,6 +5,7 @@ import glob
 import numpy as np
 
 arquivos = glob.glob(r'../HashTag_Reconhecimento_CAPTCHA/img/destino/*')
+# The above code is doing the following:
 for arquivo in arquivos:
    # tratamento da imagem
     # Converting the image to grayscale and then inverting the colors.
@@ -27,7 +28,7 @@ for arquivo in arquivos:
             regiao_letras.append((x, y, largura, altura))
 
     # Desenhar os contronos e separar letras
-   # Drawing the contours and separating the letters.
+    # Drawing the contours and separating the letters.
     imagem_final = cv2.merge([imagem] * 3)
     i = 1
     for retangulo in regiao_letras:
