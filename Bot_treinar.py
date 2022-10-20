@@ -87,4 +87,4 @@ modelo.fit(X_train, Y_train, validation_data=(
     X_teste, Y_teste), batch_size=58, epochs=10, verbose=1)
 
 # Salvar o Modelo Treinado
-modelo.save("IA_CAPTCHA.dat")
+modelo.save("IA_CAPTCHA.hdf5")

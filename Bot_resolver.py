@@ -15,7 +15,7 @@ def quebrar_captcha():
     with open("rotulos_model.dat","rb") as arquivo_tradutor:
         lb = pickle.load(arquivo_tradutor)
 
-    modelo = load_model("IA_CAPTCHA.dat")
+    modelo = load_model("IA_CAPTCHA.hdf5")
 
 # usar o modelo para resolver os captchas (colocando em uma pasta resolver)
 # tratar a imagem
