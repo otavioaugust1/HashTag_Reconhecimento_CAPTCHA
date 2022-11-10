@@ -2,8 +2,8 @@
 
 import numpy as np
 import os
-import cv2
 import pickle
+import cv2 
 from keras.models import load_model
 from helpers import resize_to_fit
 from imutils import paths
